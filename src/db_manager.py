@@ -187,10 +187,3 @@ class DBManager:
             set_db = cur.fetchall()
         return set_db
 
-# Создание экземпляра класса DBManager и использование методов
-db_manager = DBManager()
-db_manager.get_companies_and_vacancies_count()
-db_manager.get_all_vacancies()
-db_manager.get_avg_salary()
-db_manager.get_vacancies_with_higher_salary()
-db_manager.get_vacancies_with_keyword('python')
