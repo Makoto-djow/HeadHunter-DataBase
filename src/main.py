@@ -1,4 +1,3 @@
-from hh_api import db_tables, filling_in_tables
 from db_manager import DBManager
 
 
@@ -6,8 +5,8 @@ if __name__ == '__main__':
 
     employers_list = [3776, 15478, 8620, 8642172, 3529, 78638, 2180, 4006, 4181, 64174]
     db_manager = DBManager()
-    db_tables()
-    filling_in_tables(employers_list)
+    db_manager.db_tables()
+    db_manager.filling_in_tables(employers_list)
 
     "Список всех компаний и количество вакансий у каждой компании\n"
     print(db_manager.get_companies_and_vacancies_count())
