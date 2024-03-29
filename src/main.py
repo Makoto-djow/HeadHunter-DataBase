@@ -23,3 +23,5 @@ if __name__ == '__main__':
     "Список всех вакансий, в названии которых содержатся переданные в метод слова\n"
     word = input('Введите текст: ')
     print(db_manager.get_vacancies_with_keyword(word))
+
+    db_manager.close()
